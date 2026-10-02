@@ -1,11 +1,5 @@
 @import "tailwindcss";
 
-@theme {
-  --font-sans: 'Plus Jakarta Sans', sans-serif;
-  --color-ewu-navy: #0F2C59;
-  --color-ewu-dark-navy: #0B192C;
-  --color-ewu-green: #00A86B;
-}
 
 @layer base {
   :root {
