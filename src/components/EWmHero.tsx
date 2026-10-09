@@ -18,11 +18,13 @@ import Logo from './Logo';
 interface EWmHeroProps {
   onCategorySelect?: (category: string) => void;
   onRegisterClick?: () => void;
+  onAvatarClick?: () => void;
 }
 
 export const EWmHero: React.FC<EWmHeroProps> = ({ 
   onCategorySelect,
-  onRegisterClick 
+  onRegisterClick,
+  onAvatarClick
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
@@ -117,6 +119,7 @@ export const EWmHero: React.FC<EWmHeroProps> = ({
             {/* Avatar Circle ("SA") */}
             <div 
               title="Student Account (SA)"
+              onClick={onAvatarClick}
               className="w-9 h-9 rounded-full bg-[#0F2C59] text-white flex items-center justify-center font-bold text-xs shadow-xs cursor-pointer"
             >
               SA
